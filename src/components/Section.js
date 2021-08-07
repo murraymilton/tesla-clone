@@ -15,5 +15,6 @@ const Wrap = styled.div `
  width: 100vw;  // Our vertical width
  height: 100vh; // Our vertical height
  background: orange;
+ background-image: url('/images/solar-roof.jpg')
 
 `
