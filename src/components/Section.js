@@ -16,6 +16,7 @@ function Section() {
                     Existing Inventory
                 </RightButton>
             </ButtonGroup>
+            <DoownArrow src="/images/down-arrow.svg"/>
         </Wrap>
     )
 }
@@ -28,7 +29,11 @@ const Wrap = styled.div `
  background-size: cover;
  background-position:center;
  background-repeat: no-repeat;
- background-image: url('/images/model-s.jpg')
+ background-image: url('/images/model-s.jpg');
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between; // Vertical alignment
+ align-items: center;
 
 `
 
@@ -40,6 +45,8 @@ const ItemText = styled.div`
 
 const ButtonGroup = styled.div`
     display: flex;
+    margin-bottom: 30px;
+
 `
 
 const LeftButton = styled.div`
@@ -54,9 +61,16 @@ const LeftButton = styled.div`
     opacity: 0.85;
     text-transform: uppercase;
     font-size: 12px;
+    cursor: pointer;
 
 `
 
 const RightButton = styled(LeftButton)`  // We are inheriting the the LeftButton here to access its props
+
+`
+
+const DoownArrow = styled.img`
+    margin-top: 20px;
+    height: 40px;
 
 `
