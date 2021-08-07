@@ -8,6 +8,7 @@ function Section() {
                 <h1>Model S</h1>
                 <p>Order Online for Touchless Delivery </p>
             </ItemText>
+            <Buttons>
             <ButtonGroup>
                 <LeftButton>
                     Custom Order
@@ -17,6 +18,7 @@ function Section() {
                 </RightButton>
             </ButtonGroup>
             <DoownArrow src="/images/down-arrow.svg"/>
+            </Buttons>
         </Wrap>
     )
 }
@@ -72,5 +74,9 @@ const RightButton = styled(LeftButton)`  // We are inheriting the the LeftButton
 const DoownArrow = styled.img`
     margin-top: 20px;
     height: 40px;
+
+`
+
+const Buttons = styled.div `
 
 `
