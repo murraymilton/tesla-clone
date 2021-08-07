@@ -32,6 +32,7 @@ const Container = styled.div`
     position: fixed;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
     top: 0;
     left:0;
