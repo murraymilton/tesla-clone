@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section({title, description, leftBtnText, rightBtnText, backgroudImg}) {
+function Section({title, description, leftBtnText, rightBtnText, backgroundImg}) {
     return (
-        <Wrap bgImage>
+        <Wrap bgImage={backgroundImg}>
             <ItemText>
                 <h1>{title}</h1>
                 <p>{description}</p>
@@ -31,12 +31,12 @@ const Wrap = styled.div `
  background-size: cover;
  background-position:center;
  background-repeat: no-repeat;
- background-image: url('/images/model-s.jpg');
+//  background-image: url('/images/model-s.jpg');
  display: flex;
  flex-direction: column;
  justify-content: space-between; // Vertical alignment
  align-items: center;
-
+ background-image: ${props => `url("/images/${props.bgImage}")`}
 `
 
 const ItemText = styled.div`
